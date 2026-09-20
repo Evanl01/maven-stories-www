@@ -1,6 +1,6 @@
 # maven-stories-www
 
-Static support & privacy pages for Maven Stories apps.
+Static support & privacy pages for Maven Reader.
 
 Hosted with **GitHub Pages** (no Node, no build step).
 
@@ -26,9 +26,9 @@ Site URL will be:
 
 `https://evanl01.github.io/maven-stories-www/`
 
-### App Store Connect URLs
+### Store listing URLs
 
-- Support (per app): `https://evanl01.github.io/maven-stories-www/maven-stories/`
+- Support (per app): `https://evanl01.github.io/maven-stories-www/maven-reader/`
 - Privacy (company-wide): `https://evanl01.github.io/maven-stories-www/privacy.html`
 
 ### Custom domain (optional)

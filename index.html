@@ -3,51 +3,83 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maven Stories</title>
+    <meta name="theme-color" content="#4166ea" />
+    <title>Maven Reader</title>
     <meta
       name="description"
-      content="Maven Stories — support and privacy information for our apps and services."
+      content="Maven Reader — a simple ebook reader for PDFs and EPUBs, built for offline reading."
+    />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main class="wrap">
-      <p class="brand">Maven Stories</p>
-      <h1>Apps from Maven Stories</h1>
-      <p class="lead">
-        We design, build, and publish apps for reading and listening. Use the
-        links below for product support and privacy details.
-      </p>
+  <body class="is-landing">
+    <main class="landing">
+      <section class="landing-panel" aria-label="Maven Reader">
+        <div class="landing-panel-inner">
+          <a class="brand-lockup" href="./" aria-label="Maven Reader home">
+            <img
+              class="brand-mark"
+              src="./assets/app-icon.png"
+              width="44"
+              height="44"
+              alt=""
+            />
+            <span>Maven Reader</span>
+          </a>
 
-      <section>
-        <h2>Apps</h2>
-        <ul class="app-list">
-          <li>
-            <a href="./maven-stories/">
-              <span class="app-name">Maven Stories</span>
-              <span class="app-desc">Stories and audio for iPhone and iPad</span>
-            </a>
-          </li>
-        </ul>
+          <h1 class="landing-headline">
+            Stories that stay<br />
+            with you.
+          </h1>
+          <p class="landing-lead">
+            A simple ebook reader for your phone — built for offline
+            reading.
+          </p>
+        </div>
+
+        <p class="landing-foot">
+          © <span id="y"></span> ·
+          <a href="./privacy.html">Privacy</a>
+        </p>
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>
-          For support or other questions, email
-          <a href="mailto:support@maven-stories.com">support@maven-stories.com</a>.
-        </p>
-        <p>
-          <a href="./privacy.html">Privacy Policy</a>
-        </p>
-      </section>
-
-      <footer>
-        © <span id="y"></span> Maven Stories
-        <script>
-          document.getElementById("y").textContent = new Date().getFullYear();
-        </script>
-      </footer>
+      <aside class="landing-aside" aria-label="App resources">
+        <div class="landing-aside-card">
+          <h2>App resources</h2>
+          <p>Support and privacy for Maven Reader.</p>
+          <ul class="aside-links">
+            <li>
+              <a href="./maven-reader/">
+                <span class="aside-copy">
+                  <span class="aside-title">Support</span>
+                  <span class="meta">Help using the app</span>
+                </span>
+                <span class="chev" aria-hidden="true">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="./privacy.html">
+                <span class="aside-copy">
+                  <span class="aside-title">Privacy Policy</span>
+                  <span class="meta">How we handle data</span>
+                </span>
+                <span class="chev" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
     </main>
+    <script>
+      document.getElementById("y").textContent =
+        "Copyright " + new Date().getFullYear();
+    </script>
   </body>
 </html>
